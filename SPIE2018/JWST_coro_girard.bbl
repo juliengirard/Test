@@ -1,0 +1,286 @@
+\begin{thebibliography}{10}
+
+\bibitem{beichman2012_spie_science_nircam}
+{Beichman}, C.~A., {Rieke}, M., {Eisenstein}, D., {Greene}, T.~P., {Krist}, J.,
+  {McCarthy}, D., {Meyer}, M., and {Stansberry}, J., ``{Science opportunities
+  with the near-IR camera (NIRCam) on the James Webb Space Telescope (JWST)},''
+  in [{\em Space Telescopes and Instrumentation 2012: Optical, Infrared, and
+  Millimeter Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 8442},
+  84422N (Sept. 2012).
+
+\bibitem{boccaletti2004_MIRI_exoplanets}
+{Boccaletti}, A., {Riaud}, P., {Baudoz}, P., {Rouan}, D., {Baudrand}, J., and
+  {Lagage}, P.~O., ``{Observation of exoplanets with JWST/MIRI},'' in [{\em
+  35th COSPAR Scientific Assembly}{\nolinebreak\hspace{0.1em}]},  {Paill{\'e}},
+  J.-P., ed., {\em COSPAR Meeting} {\bf 35},  2123 (2004).
+
+\bibitem{boccaletti2005_MIRI_exoplanets}
+{Boccaletti}, A., {Baudoz}, P., {Baudrand}, J., {Reess}, J.~M., and {Rouan},
+  D., ``{Imaging exoplanets with the coronagraph of JWST/MIRI},'' {\em Advances
+  in Space Research}~{\bf 36},  1099--1106 (2005).
+
+\bibitem{greene2010_spie_nircam}
+{Greene}, T., {Beichman}, C., {Gully-Santiago}, M., {Jaffe}, D., {Kelly}, D.,
+  {Krist}, J., {Rieke}, M., and {Smith}, E.~H., ``{NIRCam: development and
+  testing of the JWST near-infrared camera},'' in [{\em Space Telescopes and
+  Instrumentation 2010: Optical, Infrared, and Millimeter
+  Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 7731},  77310C
+  (July 2010).
+
+\bibitem{beichman2014_nircam}
+{Beichman}, C., {Doyon}, R., {Greene}, T., {Hodapp}, K., {Horner}, S., {Krist},
+  J., {McCarthy}, D., {Meyer}, M., {Rieke}, M., {Stansberry}, J., {Stauffer},
+  J., {Trauger}, J., and {NIRCam Team}, ``{The Near-Infrared Camera on the
+  James Webb Space Telescope: The Next Great Step in Exoplanet Research},'' in
+  [{\em Search for Life Beyond the Solar System. Exoplanets, Biosignatures
+  {\amp} Instruments}{\nolinebreak\hspace{0.1em}]},  {Apai}, D. and {Gabor},
+  P., eds.,  4.12 (Mar. 2014).
+
+\bibitem{boccaletti2015_MIRI_coro}
+{Boccaletti}, A., {Lagage}, P.-O., {Baudoz}, P., {Beichman}, C., {Bouchet}, P.,
+  {Cavarroc}, C., {Dubreuil}, D., {Glasse}, A., {Glauser}, A.~M., {Hines},
+  D.~C., {Lajoie}, C.-P., {Lebreton}, J., {Perrin}, M.~D., {Pueyo}, L.,
+  {Reess}, J.~M., {Rieke}, G.~H., {Ronayette}, S., {Rouan}, D., {Soummer}, R.,
+  and {Wright}, G.~S., ``{The Mid-Infrared Instrument for the James Webb Space
+  Telescope, V: Predicted Performance of the MIRI Coronagraphs},'' {\em
+  \pasp}~{\bf 127},  633 (July 2015).
+
+\bibitem{krist2007_spie_disk}
+{Krist}, J.~E., {Beichman}, C.~A., {Trauger}, J.~T., {Rieke}, M.~J.,
+  {Somerstein}, S., {Green}, J.~J., {Horner}, S.~D., {Stansberry}, J.~A.,
+  {Shi}, F., {Meyer}, M.~R., {Stapelfeldt}, K.~R., and {Roellig}, T.~L.,
+  ``{Hunting planets and observing disks with the JWST NIRCam coronagraph},''
+  in [{\em Techniques and Instrumentation for Detection of Exoplanets
+  III}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 6693},  66930H
+  (Sept. 2007).
+
+\bibitem{krist2010_spie_jwst_occulters}
+{Krist}, J.~E., {Balasubramanian}, K., {Muller}, R.~E., {Shaklan}, S.~B.,
+  {Kelly}, D.~M., {Wilson}, D.~W., {Beichman}, C.~A., {Serabyn}, E., {Mao}, Y.,
+  {Echternach}, P.~M., {Trauger}, J.~T., and {Liewer}, K.~M., ``{The
+  JWST/NIRCam coronagraph flight occulters},'' in [{\em Space Telescopes and
+  Instrumentation 2010: Optical, Infrared, and Millimeter
+  Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 7731},  77313J
+  (July 2010).
+
+\bibitem{jdox_hci}
+{Space Telescope Science Institute (STScI)}, ``{JWST High-Contrast Imaging},''
+  {\em JWST User Documentation [Updated 2017 May 18] {\tt \small
+  \href{https://jwst-docs.stsci.edu/display/JPP/JWST+High-Contrast+Imaging?q=High}{$\sim$/JPP/JWST+High-Contrast+Imaging?q=High}}}
+   (2016-).
+
+\bibitem{jdox_general}
+{Space Telescope Science Institute (STScI) Home Page}, ``{Home Page},'' {\em
+  JWST User Documentation [Updated 2018 March 16] {\tt \small
+  \href{https://jwst-docs.stsci.edu}{https://jwst-docs.stsci.edu}}}  (2016-).
+
+\bibitem{perrin2014_webbPSF}
+{Perrin}, M.~D., {Sivaramakrishnan}, A., {Lajoie}, C.-P., {Elliott}, E.,
+  {Pueyo}, L., {Ravindranath}, S., and {Albert}, L., ``{Updated point spread
+  function simulations for JWST with WebbPSF},'' in [{\em Space Telescopes and
+  Instrumentation 2014: Optical, Infrared, and Millimeter
+  Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 9143},  91433X
+  (Aug. 2014).
+
+\bibitem{perrin2016_JWST_WFS}
+{Perrin}, M.~D., {Acton}, D.~S., {Lajoie}, C.-P., {Knight}, J.~S., {Lallo},
+  M.~D., {Allen}, M., {Baggett}, W., {Barker}, E., {Comeau}, T., {Coppock}, E.,
+  {Dean}, B.~H., {Hartig}, G., {Hayden}, W.~L., {Jordan}, M., {Jurling}, A.,
+  {Kulp}, T., {Long}, J., {McElwain}, M.~W., {Meza}, L., {Nelan}, E.~P.,
+  {Soummer}, R., {Stansberry}, J., {Stark}, C., {Telfer}, R., {Welsh}, A.~L.,
+  {Zielinski}, T.~P., and {Zimmerman}, N.~T., ``{Preparing for JWST wavefront
+  sensing and control operations},'' in [{\em Space Telescopes and
+  Instrumentation 2016: Optical, Infrared, and Millimeter
+  Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 9904},  99040F
+  (July 2016).
+
+\bibitem{perrin2018_JWST_AAS}
+{Perrin}, M., {Acton}, D.~S., {Lajoie}, C.-P., {Knight}, J.~S., {Myers}, C.,
+  {Stark}, C., and {JWST Wavefront Sensing {\amp} Control Team}, ``{JWST
+  Wavefront Sensing and Control: Operations Plans, Demonstrations, and
+  Status},'' in [{\em American Astronomical Society Meeting Abstracts
+  \#231}{\nolinebreak\hspace{0.1em}]},  {\em American Astronomical Society
+  Meeting Abstracts} {\bf 231},  150.35 (Jan. 2018).
+
+\bibitem{perrin2018_JWST_coro_perfs}
+{Perrin}, M.~D., {Pueyo}, L., {Van Gorkom}, K., {Brooks}, K., {Rajan}, A.,
+  {Girard}, J.~H., and {Lajoie}, C.-P., ``{James Webb Space Telescope Optical
+  Simulation Testbed I: overview and first results},'' in [{\em Space
+  Telescopes and Instrumentation 2014: Optical, Infrared, and Millimeter
+  Wave}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 10698},  10698 --
+  10698 -- 16 (Aug. 2018).
+
+\bibitem{nakajima2005_di}
+{Nakajima}, T., {Morino}, J.-I., {Tsuji}, T., {Suto}, H., {Ishii}, M.,
+  {Tamura}, M., {Fukagawa}, M., {Murakawa}, K., {Miyama}, S., {Takami}, H.,
+  {Takato}, N., {Oya}, S., {Hayashi}, S., {Kudo}, T., {Itoh}, Y., {Oasa}, Y.,
+  and {Oppenheimer}, B.~R., ``{A coronagraphic search for brown dwarfs and
+  planets around nearby stars},'' {\em Astronomische Nachrichten}~{\bf 326},
+  952--957 (Dec. 2005).
+
+\bibitem{chauvin2004}
+{Chauvin}, G., {Lagrange}, A., {Dumas}, C., {Zuckerman}, B., {Mouillet}, D.,
+  {Song}, I., {Beuzit}, J., and {Lowrance}, P., ``{A giant planet candidate
+  near a young brown dwarf. Direct VLT/NACO observations using IR wavefront
+  sensing},'' {\em \aap}~{\bf 425},  L29--L32 (Oct. 2004).
+
+\bibitem{lagrange2010sci}
+{Lagrange}, A., {Bonnefoy}, M., {Chauvin}, G., {Apai}, D., {Ehrenreich}, D.,
+  {Boccaletti}, A., {Gratadour}, D., {Rouan}, D., {Mouillet}, D., {Lacour}, S.,
+  and {Kasper}, M., ``{A Giant Planet Imaged in the Disk of the Young Star
+  {$\beta$} Pictoris},'' {\em Science}~{\bf 329},  57-- (July 2010).
+
+\bibitem{bowler2016_review}
+{Bowler}, B.~P., ``{Imaging Extrasolar Giant Planets},'' {\em \pasp}~{\bf 128},
+   102001 (Oct. 2016).
+
+\bibitem{chauvin2018_spie}
+{Chauvin}, G., ``{Two decades of Exoplanetary Science with Adaptive Optics},''
+  {\em ArXiv e-prints}  (Aug. 2018).
+
+\bibitem{bowler2018}
+{Bowler}, B.~P., {Dupuy}, T.~J., {Endl}, M., {Cochran}, W.~D., {MacQueen},
+  P.~J., {Fulton}, B.~J., {Petigura}, E.~A., {Howard}, A.~W., {Hirsch}, L.,
+  {Kratter}, K.~M., {Crepp}, J.~R., {Biller}, B.~A., {Johnson}, M.~C., and
+  {Wittenmyer}, R.~A., ``{Orbit and Dynamical Mass of the Late-T Dwarf GL 758
+  B},'' {\em \aj}~{\bf 155},  159 (Apr. 2018).
+
+\bibitem{whelan2008_spectroastrometry}
+{Whelan}, E. and {Garcia}, P., ``{Spectro-astrometry: The Method, its
+  Limitations, and Applications},'' in [{\em Jets from Young Stars
+  II}{\nolinebreak\hspace{0.1em}]},  {Bacciotti}, F., {Testi}, L., and
+  {Whelan}, E., eds., {\em Lecture Notes in Physics, Berlin Springer Verlag}
+  {\bf 742},  123 (2008).
+
+\bibitem{blancocardenas2014_spectroastrometry_CRIRES}
+{Blanco C{\'a}rdenas}, M.~W., {K{\"a}ufl}, H.~U., {Guerrero}, M.~A., {Miranda},
+  L.~F., and {Seifahrt}, A., ``{CRIRES-VLT high-resolution spectro-astrometry
+  as a tool in the search for disks inside the cores of planetary nebulae},''
+  {\em \aap}~{\bf 566},  A133 (June 2014).
+
+\bibitem{nakajima2015_molecularmapping}
+{Nakajima}, T., {Tsuji}, T., and {Takeda}, Y., ``{Physical Properties of Gliese
+  229B Based on Newly Determined Carbon and Oxygen Abundances of Gliese
+  229A},'' {\em \aj}~{\bf 150},  53 (Aug. 2015).
+
+\bibitem{hoeijmakers2018_molecularmapping}
+{Hoeijmakers}, H.~J., {Schwarz}, H., {Snellen}, I.~A.~G., {de Kok}, R.~J.,
+  {Bonnefoy}, M., {Chauvin}, G., {Lagrange}, A.~M., and {Girard}, J.~H.,
+  ``{Medium-resolution integral-field spectroscopy for high-contrast exoplanet
+  imaging: Molecule maps of the $\beta$ Pictoris system with SINFONI},'' {\em
+  ArXiv e-prints}  (Feb. 2018).
+
+\bibitem{artigau2014_spie_NIRISS_AMI}
+{Artigau}, {\'E}., {Sivaramakrishnan}, A., {Greenbaum}, A.~Z., {Doyon}, R.,
+  {Goudfrooij}, P., {Fullerton}, A.~W., {Lafreni{\`e}re}, D., {Volk}, K.,
+  {Albert}, L., {Martel}, A., {Ford}, K.~E.~S., and {McKernan}, B.~L.,
+  ``{NIRISS aperture masking interferometry: an overview of science
+  opportunities},'' in [{\em Space Telescopes and Instrumentation 2014:
+  Optical, Infrared, and Millimeter Wave}{\nolinebreak\hspace{0.1em}]},  {\em
+  \procspie} {\bf 9143},  914340 (Aug. 2014).
+
+\bibitem{jdox_recom}
+{Space Telescope Science Institute (STScI)}, ``{NIRCam Coronagraphic
+  Recommended Strategies},'' {\em JWST User Documentation [Updated 2018 May 18]
+  {\tt \small
+  \href{https://jwst-docs.stsci.edu/display/JPP/NIRCam+Coronagraphic+Recommended+Strategies}{$\sim$/JPP/NIRCam+Coronagraphic+Recommended+Strategies}}}
+   (2016-).
+
+\bibitem{green2005_nircam_coro}
+{Green}, J.~J., {Beichman}, C., {Basinger}, S.~A., {Horner}, S., {Meyer}, M.,
+  {Redding}, D.~C., {Rieke}, M., and {Trauger}, J.~T., ``{High contrast imaging
+  with the JWST NIRCAM coronagraph},'' in [{\em Techniques and Instrumentation
+  for Detection of Exoplanets II}{\nolinebreak\hspace{0.1em}]},  {Coulter},
+  D.~R., ed., {\em \procspie} {\bf 5905},  185--195 (Aug. 2005).
+
+\bibitem{rouan2000}
+{Rouan}, D., {Riaud}, P., {Boccaletti}, A., {Cl{\'e}net}, Y., and {Labeyrie},
+  A., ``{The Four-Quadrant Phase-Mask Coronagraph. I. Principle},'' {\em
+  \pasp}~{\bf 112},  1479--1486 (Nov. 2000).
+
+\bibitem{pontoppidan2016_spie_pandeia}
+{Pontoppidan}, K.~M., {Pickering}, T.~E., {Laidler}, V.~G., {Gilbert}, K.,
+  {Sontag}, C.~D., {Slocum}, C., {Sienkiewicz}, M.~J., {Hanley}, C., {Earl},
+  N.~M., {Pueyo}, L., {Ravindranath}, S., {Karakla}, D.~M., {Robberto}, M.,
+  {Noriega-Crespo}, A., and {Barker}, E.~A., ``{Pandeia: a multi-mission
+  exposure time calculator for JWST and WFIRST},'' in [{\em Observatory
+  Operations: Strategies, Processes, and Systems
+  VI}{\nolinebreak\hspace{0.1em}]},  {\em \procspie} {\bf 9910},  991016 (July
+  2016).
+
+\bibitem{jdox_apt}
+{Space Telescope Science Institute (STScI)}, ``{JWST High-Contrast Imaging},''
+  {\em JWST User Documentation [Updated 2017 Novembrer 27] {\tt \small
+  \href{https://jwst-docs.stsci.edu/display/JPP/JWST+APT+Coronagraphic+Sequence+Examples}{$\sim$/JPP/JWST+APT+Coronagraphic+Sequence+Examples}}}
+   (2016-).
+
+\bibitem{marois2008_hr8799}
+{Marois}, C., {Macintosh}, B., {Barman}, T., {Zuckerman}, B., {Song}, I.,
+  {Patience}, J., {Lafreni{\`e}re}, D., and {Doyon}, R., ``{Direct Imaging of
+  Multiple Planets Orbiting the Star HR 8799},'' {\em Science}~{\bf 322},
+  1348-- (Nov. 2008).
+
+\bibitem{marois2010_hr8799e}
+{Marois}, C., {Zuckerman}, B., {Konopacky}, Q.~M., {Macintosh}, B., and
+  {Barman}, T., ``{Images of a fourth planet orbiting HR 8799},'' {\em
+  \nat}~{\bf 468},  1080--1083 (Dec. 2010).
+
+\bibitem{jdox_cvt}
+{Space Telescope Science Institute (STScI)}, ``{JWST Coronagraphic Visibility
+  Tool Help},'' {\em JWST User Documentation [Updated 2017 August 2] {\tt
+  \small
+  \href{https://jwst-docs.stsci.edu/display/JPP/JWST+Coronagraphic+Visibility+Tool+Help}{$\sim$/JPP/JWST+Coronagraphic+Visibility+Tool+Help}}}
+   (2016-).
+
+\bibitem{jdox_psfreftool}
+{Space Telescope Science Institute (STScI)}, ``{JWST High-Contrast Imaging},''
+  {\em JWST User Documentation [Updated 2018 May 18] {\tt \small
+  \href{https://jwst-docs.stsci.edu/display/JPP/Selecting+Suitable+PSF+Reference+Stars+for+JWST+High-Contrast+Imaging}{$\sim$/JPP/Selecting+Suitable+PSF+Reference+Stars+for+JWST+High-Contrast+Imaging}}}
+   (2016-).
+
+\bibitem{soummer2012}
+{Soummer}, R., {Pueyo}, L., and {Larkin}, J., ``{Detection and Characterization
+  of Exoplanets and Disks using Projections on Karhunen-Loeve Eigenimages},''
+  {\em ArXiv e-prints}~{\bf -} (July 2012).
+
+\bibitem{leisenring2018_pyNRC_prep}
+{Leisenring}, J.~M., {Schlawin}, E., {Rieke}, M., {Greene}, T., and {Fraine},
+  T., ``{pyNRC: a NIRCam ETC and simulation toolset},'' {\em {\tt \small
+  \href{https://pynrc.readthedocs.io/}{https://pynrc.readthedocs.io}}}  (in
+  prep.).
+
+\bibitem{vangorkom2016_pandeia-coronagraphy}
+{Van Gorkom}, K., {Pueyo}, L., {Lajoie}, C.-P., and {JWST Coronagraphs Working
+  Group}, ``{Improving JWST Coronagraphic Performance with Accurate Image
+  Registration},'' in [{\em American Astronomical Society Meeting Abstracts
+  \#228}{\nolinebreak\hspace{0.1em}]},  {\em American Astronomical Society
+  Meeting Abstracts} {\bf 228},  317.03 (June 2016).
+
+\bibitem{hines1999_qso}
+{Hines}, D.~C., {Low}, F.~J., {Thompson}, R.~I., {Weymann}, R.~J., and
+  {Storrie-Lombardi}, L.~J., ``{The Host Galaxy of the Broad Absorption Line
+  QSO PG 1700+518 and Its Ring Galaxy Companion: NICMOS 1.6 Micron Imaging},''
+  {\em \apj}~{\bf 512},  140--144 (Feb. 1999).
+
+\bibitem{evans2009_qso}
+{Evans}, A.~S., {Hines}, D.~C., {Barthel}, P., {Schneider}, G., {Surace},
+  J.~A., {Sanders}, D.~B., {Vavilkin}, T., {Frayer}, D.~T., {Tacconi}, L.~J.,
+  and {Storrie-Lombardi}, L.~J., ``{Molecular Gas and the Host-Galaxy System of
+  the z \~{} 0.3 QSO PG 1700+518},'' {\em \aj}~{\bf 138},  262--271 (July
+  2009).
+
+\bibitem{stevenson2018_exoctk}
+{Stevenson}, K., {Fowler}, J., {Lewis}, N.~K., {Fraine}, J., {Pueyo}, L.,
+  {Valenti}, J., {Bruno}, G., {Filippazzo}, J., {Hill}, M., {Batalha}, N.~E.,
+  and {Bushra}, R., ``{The Exoplanet Characterization ToolKit (ExoCTK)},'' in
+  [{\em American Astronomical Society Meeting Abstracts
+  \#231}{\nolinebreak\hspace{0.1em}]},  {\em American Astronomical Society
+  Meeting Abstracts} {\bf 231},  148.14 (Jan. 2018).
+
+\bibitem{batalha2017_pandexo}
+{Batalha}, N.~E., {Mandell}, A., {Pontoppidan}, K., {Stevenson}, K.~B.,
+  {Lewis}, N.~K., {Kalirai}, J., {Earl}, N., {Greene}, T., {Albert}, L., and
+  {Nielsen}, L.~D., ``{PandExo: A Community Tool for Transiting Exoplanet
+  Science with JWST {\amp} HST},'' {\em \pasp}~{\bf 129},  064501 (June 2017).
+
+\end{thebibliography}

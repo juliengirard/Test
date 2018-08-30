@@ -1,0 +1,464 @@
+\documentclass[]{spie}  %>>> use for US letter paper
+%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%\documentclass[nocompress]{spie}  %>>> to avoid compression of citations
+
+\renewcommand{\baselinestretch}{1.0} % Change to 1.65 for double spacing
+ 
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{siunitx}
+\usepackage[]{xspace}
+\usepackage{enumitem}
+
+%\usepackage[style=authortitle,backend=bibtex]{biblatex}
+%\DeclareFieldFormat[inbook]{citetitle}{#1}
+%\DeclareFieldFormat[inbook]{title}{#1}
+
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+%\newcommand{\Ks}{\textit{K$_\mathrm{s}$}}
+%\newcommand{\NACO}{N{\large \bf A}C{\large \bf O}}
+%\newcommand{\ABISM}{$ABISM$}
+%\newcommand{\Naco}{N{\normalsize \bf A}C{\normalsize \bf O}}
+%\newcommand{\nacob}{N{\scriptsize \bf A}C{\scriptsize \bf O}}
+%\newcommand{\naco}{N{\scriptsize A}C{\scriptsize O}\xspace}
+\newcommand{\arcsec}{\mbox{$''$}}
+\newcommand{\arcmin}{\mbox{$'$}}
+\newcommand{\arcdeg}{\mbox{$^{\circ}$}}
+\newcommand{\C}{\mbox{$\mathrm{C}$}}
+%\newcommand{\micron}{\mbox{ $\mathrm{\mu m}$}}
+\newcommand{\micron}{$\SI{}{\, \micro\meter}$\xspace}
+\newcommand{\stsci}{{\tt \href{https://www.stsci.edu}{STScI}}\xspace}
+\newcommand{\jwst}{{\tt \href{https://jwst.stsci.edu}{JWST}}\xspace}
+\newcommand{\hst}{{\tt \href{https://hst.stsci.edu}{HST}}\xspace}
+\newcommand{\nircam}{{\tt \href{https://jwst.stsci.edu/instrumentation/nircam}{NIRCam}}\xspace}
+\newcommand{\miri}{{\tt \href{https://jwst.stsci.edu/instrumentation/miri}{MIRI}}\xspace}
+\newcommand{\niriss}{{\tt \href{https://jwst.stsci.edu/instrumentation/niriss}{NIRISS}}\xspace}
+\newcommand{\nirspec}{{\tt \href{https://jwst.stsci.edu/instrumentation/nirspec}{NIRSpec}}\xspace}
+\newcommand{\etc}{{\tt \href{https://jwst.etc.stsci.edu/}{ETC}}\xspace}
+\newcommand{\apt}{{\tt \href{http://www.stsci.edu/hst/proposing/apt}{APT}}\xspace}
+\newcommand{\pynrc}{{\tt \href{https://pynrc.readthedocs.io/en/latest/}{pyNRC}}\xspace}
+\newcommand{\pandeia}{{\tt \href{https://pypi.org/project/pandeia.engine/}{Pandeia}}\xspace}
+\newcommand{\astroconda}{{\tt \href{https://astroconda.readthedocs.io/en/latest/}{AstroConda}}\xspace}
+\newcommand{\exoctk}{{\tt \href{https://exoctk.stsci.edu/}{ExoCTK}}\xspace}
+\newcommand{\pandexo}{{\tt \href{https://exoctk.stsci.edu/pandexo/}{PandExo}}\xspace}
+\newcommand{\pancake}{{\tt \href{https://github.com/spacetelescope/pandeia-coronagraphy}{PanCAKE}}\xspace}
+\newcommand{\stips}{{\tt \href{https://jwst.stsci.edu/science-planning/proposal-planning-toolbox/image-and-spectroscopy-simulator}{STIPS for JWST}}\xspace}
+%\newcommand{\mirage}{{\tt \href{https://github.com/spacetelescope/mirage}{MIRAGE}}\xspace}
+\newcommand{\mast}{{\tt \href{https://archive.stsci.edu}{MAST}}\xspace}
+\newcommand{\helpdesk}{{\tt \href{https://stsci.service-now.com/}{Help Desk}}\xspace}
+\newcommand{\jdox}{{\tt \href{https://jwst-docs.stsci.edu/}{JDox}}\xspace}
+\newcommand{\hci}{{\tt \href{https://jwst-docs.stsci.edu/display/JPP/JWST+High-Contrast+Imaging?q=High}{HCI}}\xspace}% 
+\newcommand{\ers}{{\tt \href{https://jwst.stsci.edu/observing-programs/approved-ers-programs}{ERS}}\xspace}%
+\newcommand{\gto}{{\tt \href{https://jwst.stsci.edu/observing-programs/approved-gto-programs}{GTO}}\xspace}%
+\newcommand{\ami}{{\tt \href{https://jwst-docs.stsci.edu/display/JTI/NIRISS+Aperture+Masking+Interferometry}{AMI}}\xspace}%
+\newcommand{\sgd}{{\tt \href{https://jwst-docs.stsci.edu/display/JTI/NIRCam+Small+Grid+Dithers}{SGD}}\cite{jdox_general}\xspace}%
+\newcommand{\klip}{{\tt \href{http://jwst-pipeline.readthedocs.io/en/latest/jwst/coron/main.html\#klip}{KLIP}}\xspace}%
+\newcommand{\calcoron}{{\tt \href{http://jwst-pipeline.readthedocs.io/en/latest/jwst/pipeline/description.html\#stage-3-coronagraphic-pipeline-step-flow-calwebb-coron3}{calwebb\_coron3}}\xspace}
+\newcommand{\jbt}{{\tt \href{https://jwst-docs.stsci.edu/display/JPP/JWST+Backgrounds+Tool}{JBT}}\xspace}%
+\newcommand{\toolbox}{{\tt \href{https://jwst.stsci.edu/science-planning/proposal-planning-toolbox}{ToolBox}}\xspace}%
+\newcommand{\techdoc}{{\tt \href{https://jwst.stsci.edu/documentation/technical-documents}{Technical Documents}}\xspace}%
+\newcommand{\webbpsf}{{\tt \href{https://webbpsf.readthedocs.io/en/stable/}{WebbPSF}}\xspace}%
+\newcommand{\mirage}{{\tt \href{https://github.com/spacetelescope/mirage}{MIRaGe}}\xspace}%
+\newcommand{\mirisim}{{\tt \href{http://miri.ster.kuleuven.be/bin/view/Internal/Software/MIRISim}{MIRISim}}\xspace}
+\newcommand{\pipeline}{{\tt \href{https://jwst-pipeline.readthedocs.io/en/latest/index.html}{Pipeline}}\xspace}
+\newcommand{\cvt}{{\tt \href{https://jwst-docs.stsci.edu/display/JPP/JWST+Coronagraphic+Visibility+Tool+Help}{CVT}}\xspace}
+%\def\bc{\begin{center}}
+%\def\ec{\end{center}}
+%\def\bl{\begin{list}{$\bullet$}{}}
+%\def\el{\end{list}}
+
+\def\begini{\begin{itemize}[itemsep=0.5pt,topsep=0.5pt]}
+\def\endi{\end{itemize}}
+%\input{defs_eng_spie2014.tex}
+
+\title{Making good use of JWST's coronagraphs:\\ Tools and strategies from a user's perspective}
+
+\author[a]{Julien H. Girard}
+%1 	Dr. Julien H. Girard				a	Email: jgirard@stsci.edu
+%2	Dr. Blair William 				a	Email: wblair@stsci.edu
+%3	Mr. Brian Brooks 				a	Email: bbrooks@stsci.edu
+%4	Mr. Keira Brooks 				a	Email: kbrooks@stsci.edu
+%5	Dr. Robert Brown 				a	Email: rbrown@stsci.edu
+%6	Dr. Howard Bushouse 	 		a	Email: bushouse@stsci.edu
+%7	Miss Alicia Canipe 				a	Email: acanipe@stsci.edu
+%8	Dr Christine Chen 				a	Email: cchen@stsci.edu
+%9	Dr. Matteo Correnti 				a	Email: correnti@stsci.edu
+%10	Mr. Brendan Hagan 				a	Email: hagan@stsci.edu
+%11	Mr. Bryan Hilbert 				a	Email: hilbert@stsci.edu
+%12	Dr. Dean Hines 				a	Email: hines@stsci.edu
+%13	Dr. Jarron Leisenring 			b	Email: jarronl@email.arizona.edu 
+%14	Mr. Joseph Long				b	Email: josephlong@email.arizona.edu
+%15 Miss Bryonny Nickson			b	Email: bnickson@stsci.edu
+%16 Marshall D. Perrin				a	Email: mperrin@stsci.edu
+%17	Dr. Klaus Pontoppidan 			a	Email: pontoppi@stsci.edu
+%18	Dr. Laurent Pueyo				a	Email: pueyo@stsci.edu
+%19	Dr. Abhijith Rajan 				a	Email: arajan@stsci.edu
+%20	Dr. Adric Riedel 				a	Email: riedel@stsci.edu
+%21	Dr. Remi Soummer 				a	Email: soummer@stsci.edu
+%22	Dr. John Stansberry 				a	Email: jstans@stsci.edu
+%23	Dr. Christopher Stark 			a	Email: cstark@stsci.edu
+%24 Mr. Kyle Van Gorkom			c	Email: kvangorkom@email.arizona.edu
+%25	Mr. Brian York					a	Email: york@stsci.edu
+%26	the Coronagraphs Working Group	a	
+
+%Robel
+%Rossy
+%Van
+%Iva
+%Jeff Valenti
+%Dan Coe
+%David Gol
+\author[a]{William Blair}
+\author[a]{Brian Brooks}
+\author[a]{Keira Brooks}
+\author[a]{Robert Brown}
+\author[a]{Howard Bushouse}
+\author[a]{Alicia Canipe}
+\author[a]{Christine Chen}
+\author[a]{Matteo Correnti}
+\author[a]{J. Brendan Hagan}
+\author[a]{Bryan Hilbert}
+\author[a]{Dean Hines}
+\author[b]{Jarron Leisenring}
+\author[b]{Joseph Long}
+\author [a]{Bryonny Nickson}
+\author[a]{Marshall D. Perrin}
+\author[a]{Klaus Pontoppidan}
+\author[a]{Laurent Pueyo}
+\author[a]{Abhijith Rajan}
+\author[a]{Adric Riedel}
+\author[a]{Remi Soummer}
+\author[a]{John Stansberry}
+\author[a]{Christopher Stark}
+\author[c]{Kyle Van Gorkom}
+\author[a]{Brian York}
+\author[a]{the Coronagraphs Working Group}
+ %William Blair, Brian Brooks, Keira Brooks, Robert Brown, Howard Bushouse, Alicia Canipe, Christine Chen, Matteo Correnti, Brendan Hagan, Bryan Hilbert, Dean Hines, Jarron Leisenring, Joseph Long, Marshall D. Perrin, Klaus Pontoppidan, Laurent Pueyo, Abhijith Rajan, Adric Riedel, Remi Soummer, John Stansberry, Christopher Stark, Kyle Van Gorkom, Brian York & past members of the Coronagraphy Working Group and other Workings Groups involved with Coronagraphy
+
+
+\affil[a]{Space Telescope Science Institute (STScI), 3700 San Martin Dr, Baltimore MD, 21218, USA}
+\affil[b]{Steward Observatory, University of Arizona, Tucson, 933 N Cherry Ave., Tucson, AZ 85721}
+\affil[c]{College of Optical Sciences, University of Arizona, Tucson, AZ 85719, USA}
+
+
+%\authorinfo{Further author information: (Send correspondence to A.A.)\\A.A.A.: E-mail: aaa@tbk2.edu, Telephone: 1 505 123 1234\\  B.B.A.: E-mail: bba@cmp.com, Telephone: +33 (0)1 98 76 54 32}
+
+% Option to view page numbers
+\pagestyle{empty} % change to \pagestyle{plain} for page numbers   
+%\setcounter{page}{301} % Set start page numbering at e.g. 301
+ % {\small \tt \href{https://jwst-docs.stsci.edu}{JDox}}
+ 
+\begin{document} 
+\maketitle
+
+\begin{abstract}
+The James Webb Space Telescope (\jwst) and its suite of instruments, modes and high contrast capabilities will enable imaging and characterization of faint and dusty astrophysical sources\cite{beichman2012_spie_science_nircam, boccaletti2004_MIRI_exoplanets, boccaletti2005_MIRI_exoplanets} (exoplanets, proto-planetary and debris disks, dust shells, etc.) in the vicinity of hosts (stars of all sorts, active galactic nuclei, etc.) with an unprecedented combination of sensitivity and angular resolution at wavelengths beyond 2\micron. Two of its four instruments, \nircam\cite{greene2010_spie_nircam, beichman2014_nircam} and \miri\cite{boccaletti2015_MIRI_coro}, feature coronagraphs\cite{krist2007_spie_disk, krist2010_spie_jwst_occulters} for wavelengths from 2 to 23\micron. \jwst will stretch the current parameter space (contrast at a given separation) towards the infrared with respect to the Hubble Space Telescope (\hst) and in sensitivity with respect to what is currently achievable from the ground with the best adaptive optics (AO) facilities.\\
+The Coronagraphs Working Group at the Space Telescope Science Institute (\stsci)  along with the Instruments Teams and internal/external partners coordinates efforts to provide the community with the best possible preparation tools, documentation, pipelines, etc. Here we give an update on user support and operational aspects related to coronagraphy. We aim at demonstrating an end to end observing strategy and data management chain for a few science use cases involving coronagraphs. This includes the choice of instrument modes as well as the observing and point-spread function (PSF) subtraction strategies (e.g. visibility, reference stars selection tools, small grid dithers), the design of the proposal with the Exposure Time Calculator (\etc), and the Astronomer's Proposal Tool (\apt), the generation of realistic simulated data at small working angles and the generation of high level, science-grade data products enabling calibration and state of the art data-processing.
+%\todo{ABSTRACT FROM LAST FALL - WILL NEED TO BE UPDATED / SHORTENED}
+%The James Webb Space Telescope (JWST) and its suite of instruments, modes and high contrast capabilities will enable imaging and characterization of faint and dusty astrophysical sources (exoplanets, proto-planetary and debris disks, dust shells, etc.) in the vicinity of hosts (stars of all sorts, AGNs, etc.) with an unprecedented combination of sensitivity and angular resolution at wavelengths beyond 2 microns. Two of its four instruments, NIRCam and MIRI, feature coronagraphs for wavelengths from 2 to 23 µm. JWST will stretch the current parameter space (contrast at a given separation) towards the infrared with respect to the Hubble Space Telescope (HST) and in sensitivity with respect to what is currently achievable from the ground with the best adaptive optics (AO) facilities. The Coronagraphs Working Group at the Space Telescope Science Institute (STScI) along with the Instrument Teams and internal/external partners coordinates efforts to provide the community with the best possible preparation tools, documentation, pipelines, etc. Here we give an update on user support and operational aspects related to coronagraphy. We aim at demonstrating an end to end observing strategy and data management chain for a few science use cases involving coronagraphs. This includes the choice of instrument modes as well as the observing and point-spead function (PSF) subtraction strategies (e.g. visibility, reference stars selection tools, small grid dithers), the design of the proposal with the Exposure Time Calculator (ETC), and the Astronomer's Proposal Tool (APT), the generation of realistic simulated data at small working angles and the generation of high level, science-grade data products enabling calibration and state of the art data-processing. Our long-term goal is to ease and maximize the scientific use and return of JWST's coronagraphic modes. Prior launch, we will prepare to analyze the first data : commissioning, Early Release Science (ERS) and Cycle 1 Guaranteed Time Observations (GTO). We will improve and adapt the above mentioned tools based on the experience and real performances, serving and benefitting from an already very active community of high-contrast, direct imaging/spectroscopy users. 
+
+
+\end{abstract}
+
+% Include a list of keywords after the abstract 
+\keywords{JWST, coronagraphy, high contrast imaging, exoplanets, user support, NIRCam, MIRI}
+
+\section{INTRODUCTION}
+\label{sec:intro}  % \label{} allows reference to this section
+
+This paper exposes the suite of current and foreseen tools to optimally plan observations with the \jwst high contrast imaging\cite{jdox_hci} (\hci) modes, specifically Coronagraphy with \nircam and \miri. It is our roadmap to help maximize the science return shortly after launch (currently planned on March 31 2021).  We want our teams as well as the community to be prepared to efficiently analyze and interpret the data and we want to be sure that the time spent taking science data and calibrations is well spent, yielding the best possible results with the least possible overheads. We surely do not wish to exhaustively list all the existing ressources but we do include some (blue) hyperlinks to the relevant tools and their documentation\cite{jdox_general}, in particular the ones in development/maintenance at \stsci to help the reader navigate.
+
+We do not present any performance assessment or predictions as this has been largely covered by passed Perrin et al. contributions \cite{perrin2014_webbPSF, perrin2016_JWST_WFS, perrin2018_JWST_AAS, perrin2018_JWST_coro_perfs} but rather focus on the building blocks and tools for the user community and on how people can find relevant information and how the blocks are associated to each other. We start by presenting shortly the coronagraphic modes and capabilities as well as the baseline PSF subtraction strategies. Then we present a few guidelines on how to best plan observations with the few given specific tools. Finally we show our current work in simulations and our attempt to produce an end to end (E2E) cookbook which will allow us and the users to experiment with realistic data and run the official data reduction pipeline on specific science cases. As this is still work in progress, we, the Coronagraphs Working Group (CWG)  give a few directions to how we see this E2E approach improve and evolve. The most recent work on realistic \jwst coronagraphs' performance via updated (with the latest ground tests) optical modeling is described in Perrin et al. 2018\cite{perrin2018_JWST_coro_perfs}\footnote{Contribution "Updated optical modeling of JWST coronagraph performance contrast, stability, and strategies" by Perrin {\em et al.} 2018 {\small \tt \href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10698/1069809/Updated-optical-modeling-of-JWST-coronagraph-performance-contrast-stability-and/10.1117/12.2313552.full}{10698-8\cite{perrin2018_JWST_coro_perfs}}} (including a video) at this same conference}  and discussed briefly in the section~\ref{sec:perf}. 
+
+%%% include fig about extragalactic %%
+%
+
+\section{Coronagraphy onboard Webb}
+\label{sec:coro}  % \label{} allows reference to this section
+
+Direct, high contrast imaging is a powerful technique\cite{nakajima2005_di, chauvin2004, lagrange2010sci, bowler2016_review, chauvin2018_spie} as it enables long-term astrometric followups of exoplanets and brown dwarfs companions and the model-independent determination of their dynamical masses\cite{bowler2018}. The spectro-photometric characterization with direct imaging leads to atmospheric characterization of atmosphere and the measurement of the spectral energy distribution and effective temperature of all sorts of objects. Associated with diffraction limited angular resolution, it permits morphological studies. Combined with mid to high resolution integral field spectroscopy (IFS) \hci can also lead to spectro-astrometric studies\cite{whelan2008_spectroastrometry, blancocardenas2014_spectroastrometry_CRIRES} or molecular mapping\cite{nakajima2015_molecularmapping, hoeijmakers2018_molecularmapping}.
+
+\begin{figure}[h!]
+\begin{center}
+%\includegraphics[width=0.5\textwidth, angle=0]{Figures/JWST_FocalPlane_Coro.pdf}
+\includegraphics[width=1.0\textwidth, angle=0]{Figures/JWST_coro_focalplane_examples.png}
+\caption{Distribution of the instruments' field of view at the focal plane of \jwst. \nircam in the center and \miri on the top right corner each feature 5 and 4 coronagraphic masks, respectively. The non-coronagraphy modes are greyed out for lisibility. Examples are given of simulations done with \webbpsf (credit: Marshall Perrin) to display on-axis PSF with/without coronagraphic optics for the 4 families of coronagraphs.}
+\label{fig:jwst-focal}
+\end{center}
+\end{figure}
+
+\jwst Coronagraphy will enable a whole new parameter space with unprecedented sensitivity and contrast in the near and mid infrared in the footsteps of what "Hubble" has achieved at shorter wavelengths and in great synergy with was is achievable from the ground. Very attractive to study the birth of stars and protoplanetary systems and isolate and characterize giant exoplanets, it will also be used to reveal faint extended emission and structures around dying stars as well as in the circumnuclear environments of active galactic nuclei (AGN) when they can be spatially resolved, probing the connection between star-formation and outflows powered by the central supermassive black holes.
+
+Fig.~\ref{fig:jwst-focal} displays how the focal plane and field of view (FoV) of the \jwst is physically used of the 4 scientific instruments of \jwst (\miri, \nircam, \nirspec, and \niriss) as well as the Fine Guiding Sensor (FGS). To emphasize on coronagraphy, we greyed out all the instrument modes which do not feature coronagraphs. \nircam and \miri have 5 and 4 combinations of occulter $+$ Lyot stop (what makes a coronagraph), respectively. Here we display one the Imaging PSF, focal plane mask (occulter) and Lyot stop geometry as well as the on-axis (occulted) PSF for each family of coronagraphs: the round mask and long wavelength bar for \nircam at 3.3\micron, the Four-Quadrant Phase Mask (4QPM, occasionally called FQPM) at 11.4\micron and the "big" Lyot mask for 23\micron operations with \miri. 
+
+\subsection{Baseline, recommended observing strategy}
+\label{sec:baseline}
+
+When considering using any of the coronagraphic modes, many parameters come into play. \jwst coronagraphy enables the deepest contrast in the close vicinity of a source but it is not cheap in execution time. Its use should therefore be 100\% justified by the science case. For moderate contrasts ($\sim 10^{-3}$ to $10^{-4}$) and/or for point source detections well in the background limited regime (say $\geqslant$ 2\arcsec away from the central object), it might be wise to opt for simple imaging (and eventually perform PSF subtraction or deconvolution when possible). For moderate contrasts at very short separations, smaller than the nominal inner-working angle (IWA) of a coronagraphs at a given wavelength ($\leqslant$ 5\micron), one can eventually consider using the Aperture Masking Interferometry (\ami) mode\cite{artigau2014_spie_NIRISS_AMI} offered with \niriss.
+
+%\footnote{See {\small \tt \href{https://jwst-docs.stsci.edu/display/JTI/NIRISS+Aperture+Masking+Interferometry}{https://jwst-docs.stsci.edu/display/JTI/NIRISS+Aperture+Masking+Interferometry}}}.\\
+
+Coronagraphy on \jwst is costly because - in most cases - it requires a observing sequence that mitigates the performances degradation inherent to the thermal drifts and imperfect target acquisition centering that lead to wavefront and PSF variations. We thus recommended to use 2 subsequent rolls on a science target and then slew and to observe a PSF reference star, ideally with several small-grid-dither (\sgd) pointings  (3, 5 or 9-point). These three observations should be gathered in a non-interruptible sequence in \apt. This strategy is recommended\cite{jdox_recom} to guarantee two independent optimal PSF subtraction options. The maximum roll angle being $\pm$ 5\arcdeg depending on the target coordinates and time of the observation, the two roll angles provide optimal results at large separations (typically 1\arcsec and further) but not so much in the speckle limited regime around the mask.
+
+ The Reference Differential Imaging (RDI) approach provided by the subsequent observation of a bright (as bright or brighter than the science target) PSF reference star with similar spectral property in principle should allow one to reach to reach the IWA of any given coronagraph and the lowest level of self subtraction of the astrophysical signal of interest in the speckle limited regime (typically within 1\arcsec). For \miri's longer wavelengths (for which small wavefront errors matter less), the strategy should suffice.
+ 
+Especially that the early stages, we recommend to follow this baseline strategy to ensure a good recovery of wavefront errors and hence the contrast as if in an ideal case (typically what the official \etc provides). The observations of the PSF references would in the future populate a large reference library that in turn could be used to achieve the best performances without necessarily the need to observe a PSF reference as part of one's sequence. During \gto, \ers and the first cycles of operations, we think such library will not contains enough PSFs to guarantee optimal performances.  Moreover, Perrin {\em et al.}\cite{perrin2018_JWST_coro_perfs} showed that one could recover near-optimal contrast in the speckle limited regime around the conagraph with \nircam, using the diversity of PSFs provided by the \sgd strategy as "mini reference library". Hopefully, after several months of operations a large amount of PSFs will be available (with several occulter/filter combinations) to build larger PCA/\klip libraries and eventually relax observing constraints in the future at equivalent or better performances. 
+
+\subsection{NIRCam coronagraphy}
+\label{sec:nircam}  % 
+
+The \nircam Coronagraphic Imaging mode offers \hci capabilities for a set of short and long wavelength filters covering 1.8 to 5 \micron. Three round occulting masks and two bar masks (with corresponding Lyot stops) are available with inner-working angles (IWA) ranging from 0.13\arcsec to 0.88\arcsec\cite{green2005_nircam_coro}, depending on wavelength and geometry.
+
+\nircam coronagraphy enables the highest achievable contrast with \jwst (typically $\sim10^{-6}$ or better at 1\arcsec IWA and beyond) to reveal faint spatially resolved structures or point sources in the vicinity of a target of interest (star, AGN, etc.). Prior to requesting coronagraphy, one should evaluate the contrast regime achievable (or needed) at a given working angle or separation from the central object. In this article most examples are elaborated with \nircam. 
+
+Currently, \nircam coronagraphy is limited to Module A only, and short (SW) and long wavelengths (LW) observations cannot be carried out simultaneously. However it could be implemented in the future as we are going through prioritization at many levels.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.9\textwidth, angle=0]{Figures/panchromatic_imaging_HD181327.png}
+\caption{Panchromatic imaging of the HD181327 debris disk using \nircam and \miri.}
+\label{fig:jwst-disk}
+\end{center}
+\end{figure}
+
+\subsection{MIRI coronagraphy}
+\label{sec:MIRI}
+
+\miri is the mid-IR instrument of \jwst. Served by a 6.5-m diameter primary mirror, it represents a huge improvement with respect to what is currently or has been available so far. The Spitzer and WISE space missions had 0.85-m and 0.4-m primaries. On the ground the background and sensitivity through the Earth's atmosphere (water vapor, etc.) does not allow to be in the same sensitivity regime by orders of magnitudes.  While the PSF and resolution scale with wavelength, \miri features 3 4QPM Coronagraphs\cite{rouan2000} with potentially $\sim 1 \lambda/D$ IWA (0.33\arcsec, 0.36\arcsec, and 0.49\arcsec at 10.6\micron,  11.4\micron and 15.5\micron respectively) which corresponds to the best IWA achievable with \nircam at 3 to 4\micron. The simulations displayed on Fig~\ref{fig:jwst-disk} show that a circumstellar disk can be  studied with both instruments with great complementarity (wavelength coverage) and with roughly the same IWA (though the resolution is, naturally, better at shorter wavelengths). 
+
+Unlike in \nircam, \miri's coronagraphs are linked to a given filter (because the Lyot stops are "sandwiched" with the passband filters in the pupil plane), hence the 3 discrete central wavelengths described in the previous paragraph for the 4QPM. The large Lyot-type mask works with a filter centered at 23\micron. It has the highest rejection on-axis ($\geqslant 800\times$) but has a poor IWA of 2.16\arcsec. It will be useful to reveal very extended structures (with an apparent diameter of over 4\arcsec).
+%\todo{JWST Coronagraphy in the Today and Tomorrow's context}\\
+%\todo{Synergies ground/space, optical/IR, cm/sub-mm}\\
+
+\section{User Documentation and support}
+\label{sec:user}
+
+As the amount of documentation for \jwst is vast and so are the needs it is difficult to address all points in a single contribution even entirely dedicated to one observing technique: Coronagraphy. For in depth guidance on all the items developed in this section and the next, users can look at the material (videos, presentations) of several Proposal Planning Workshops that are organized throughout the years\footnote{To find links to Proposal Planning Workshops, please look for "{\small \tt \href{https://jwst.stsci.edu/events}{Events}}" (upcoming/past)}.
+
+\subsection{JDox, the JWST documentation platform}
+\label{sec:doc}
+
+At \stsci a huge effort has been invested in elaborating a complete, versatile and alive "wiki-like" documentation platform\cite{jdox_general} called {\small \tt \href{https://jwst-docs.stsci.edu}{\jdox}}(\stsci, 2016-)\footnote{JWST User Documentation 2016- Baltimore, MD. Space Telescope Science Institute [Updated 2018 March 16],  {\small \tt \href{https://jwst-docs.stsci.edu}{https://jwst-docs.stsci.edu}}}. The platform currently contains over 700 articles with over 30,000 links between them articulated around 4 main categories. About 40 articles are specific to Coronagraphy and over 183 articles directly mention them. 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.65\textwidth, angle=0]{Figures/JWST_doc1}
+\caption{The four big categories of {\small \tt \href{https://jwst-docs.stsci.edu/}{JDox}}, the wiki-based documentation of \jwst. The cloud plot shows all the connections between articles while colors represent a certain techniques: e.g. coronagraphy here}
+\label{fig:jwst-doc}
+\end{center}
+\end{figure}
+
+Our work as Coronagraphy Working Group (CWG) focuses mainly on the two right most categories: Observation Planning and Data Calibration and Analysis whose associated tools are presented in the subsequent section \ref{sec:tools}.
+
+\subsection{Help Desk}
+\label{sec:hd}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth, angle=0]{Figures/JWST_coro_helpdesk.png}
+\caption{Since early 2018, a \helpdesk card about Coronagraphy was created to address specific question and direct them to experts as much as possible.}
+\label{fig:jwst-help}
+\end{center}
+\end{figure}
+
+Our \nircam, \miri instrument team and observing support experts or fulfillers can answer a range of questions through a dedicated \helpdesk site as a special Coronagraphy card has been created as shown by Fig~\ref{fig:help}. In addition, we write knowledge based articles on topics which are not yet covered on \jdox. When a user have a doubt or question it is important, for accountability that he/she/they uses the \helpdesk channel as much as possible. We are then able to perform statistics on calls and issues and can identify the most recurrent ones and assign priorities to solving them.
+
+\section{Observation planning Tools}
+\label{sec:tools}
+
+In this section we present the main "front-end" tools\footnote{For further information, one can browse the complete "Proposal Planning \toolbox" and the \techdoc} that we support for the user community. These tools should in principle suffice to prepare a \jwst proposal involving coronagraphy. 
+
+\subsection{The Exposure Time Calculator: ETC}
+\label{sec:etc}
+
+\jwst's official \etc is available to the community as a web-based user interface (UI) allowing the community build, share and reuse workbooks and to graphically set parameters up, the creation of somewhat complex science scenes. There are default sources as well as sample workbooks available for new users to get started.
+
+The UI's calculations are based on the \pandeia\cite{pontoppidan2016_spie_pandeia}, a "simulation-hybrid" engine that performs calculations on small two-dimensional (typically 101pixels, or a few arcseconds) astronomical scenes. It models both the spatial and the wavelength dimensions, using realistic PSFs for each instrument mode. The PSFs are not calculated "on the fly" but rather precalculated with \webbpsf and stored in a large library. For coronagraphy, the limitation is that the library only contrains a limited number of off-axis PSFs at discrete positions (angular distances which depend on which occulter is used). The SNR and contrast calculations are thus approximative but nevertheless enough to have a good idea of what should be the combination of mask, filter and readout pattern to achieve a certain SNR for a given source.
+%, documentation on how to use/install: {\small \tt \href{https://jwst-docs.stsci.edu/display/JPP/Installing+Pandeia}{https://jwst-docs.stsci.edu/display/JPP/Installing+Pandeia}}}. 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.89\textwidth, angle=0]{Figures/JWST_ETC_NIRCam.png}
+\caption{Example of a simple \etc workbook that calculates the signal-to-noise (SNR) of a substellar companion. The SNR versus wavelength is given for the suite of long wavelength (LW) filters of \nircam. The top right insert show the nominal "optimal" extraction performes by the \etc: a reference PSF is scaled photometrically and subtracted to the science scene. Since 2018 it is possible to download each plane separately as well as to get information (through the report tab) about the saturation level (number of pixels and maps).}
+\label{fig:jwst-etc}
+\end{center}
+\end{figure}
+
+\pandeia is developed in Python and is part of the \astroconda Python package. It is possible to script and use \pandeia in a batch mode and perform more complex, higher or lower fidelity calculations, call \webbpsf at will and define a particular spectral sampling, redefine the calculation scene size, etc. A screenshot of the \etc is shown in Fig \ref{fig:jwst-etc}.
+
+The current implementation of the \etc for coronagraphy is mainly useful for the following tasks:
+\begini
+%\setlength\itemsep{0.5em}
+\item Investigate the detector readout patterns and associated saturation
+\item Compute the signal-to-noise ratio (SNR) of an off-axis point source 
+\item Get a rough idea of which mask and coronagraph allow to detect a faint companion around a host with an ideal noise model, background and PSF subtraction
+\endi
+%\todo{Modes \& Strategies}\\
+%\todo{Use cases: GTO, ERS, others}\\
+%\todo{Documentation}\\
+
+The science target and the PSF reference stars are assumed to be centered at the exact same position behind the coronagraphic mask. Also, while their spectral type can be specified to differ, the \etc only accounts for the total flux difference through the filter bandpass and not for the possible loss of contrast due to the spectral mismatch between the two sources.
+
+The \etc is thus perfectly adapted and trustable for the SNR calculation occurring in the background limited regime, typically at 1\arcsec separation and beyond. Below 1\arcsec (in the speckle-limited regime around the occulter) the official web-based \etc approximates the results to the closest available PSF in its library. For more realistic contrast and detection limits calculations at any separation within 1\arcsec and down to the IWA of a given coronagraph, accounting for eventual pointing errors, it is recommended to make use of the \pancake extension (see section \ref{sec:perf}). This Python-based package allows one to introduce a mis-registration of the PSF Reference star, experiment with small grid dithers, etc.
+
+\subsection{The Astronomer Proposal Tool: APT}
+\label{sec:apt}
+
+The Astronomer's Proposal Tool (\apt) is a java/GUI-based software package that astronomers must use to write, validate, and submit proposals for \jwst. It is well known to \hst users though it is a separate branch). Guidance on how to prepare a coronagraphic sequence with \apt is available on \jdox\cite{jdox_apt}. The bottom line is that a standard coronagraphic sequence involves a set of linked observations in a non-interruptible sequence (check box in \apt).
+
+For coronagraphy, the target acquisition (TA) can easily be a showstopper, directly influencing the quality and hence the usefulness of the data. A low signal-to-noise ratio (SNR) on the initial TA image can result in a sub-optimal centering of the target behind the coronagraph with dramatic consequences.
+\nircam's TA gives users the opportunity to obtain two full-frame images consecutively for astrometric purposes: one when the science target is still away from the mask and a second one after centering the star behind the coronagraph. This allows for the retrieval of the precise position of the host when behind the mask with respect to all the background sources in the full field of view. 
+
+Coronagraphy with several observations bundled in a non-interruptible sequence can benefit from the "smart accounting" option available in \apt. It will reduce the total slew times charged for such sequences.
+
+\subsection{The Coronagraphic Visibility Tool: CVT}
+\label{sec:cvt}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth, angle=0]{Figures/HR8799_CVT_2.png}
+\caption{The Coronagraphic Visibility Tool (\cvt) allows to find out the proper time windows and Aperture Position Angles (PA) to observe a non-symmetric scene. Here it shows when in the year the HR8799\cite{marois2008_hr8799, marois2010_hr8799e} b, c and d are observable at the same time with the \nircam SW bar coronagraph. It is very useful for large extended disks too. Left: zoomed in on the first visibility window in the left plot and highlighted a time when all three companions are visible outside the wedge obscuration (right).}
+\label{fig:jwst-cvt}
+\end{center}
+\end{figure}
+
+The choice of available coronagraphic setups (\nircam and/or \miri) can be quickly explored thanks to the Coronagraphic Visibility Tool (\cvt)\cite{jdox_cvt}. This GUI-based tool was primarily developed to provide the visibility and allowed aperture positon angles (PA) for a given target across the year or at a specific date. Some targets will be in the so called continuous viewing zone (CVZ) and will be observable all year round but at a certain orientation with maximum of $\pm\,$5\arcdeg roll angle. The right-hand plot of the \cvt is very useful also to visualize the coronagraphic field of view and physical limitations (size of the mask, neutral density filter positions, orientation of the bar coronagraphs with respect to given companion or circumstellar disk PA and separation). The questions one can seek answer to with the \cvt are:
+\begini 
+\item Is scheduling an issue for my target? 
+\item Is my preferred mask problematic?
+\item What is the best time and hence aperture PA to have the disk I want to image oriented orthogonally to the bar (or wedge) occulter?
+\item At a given date, what will be the maximum amplitude of roll angle for my target?
+\endi
+
+\subsection{Other tools}
+\label{sec:other}
+
+Amongst other tools which can be relevant for coronagraphy are:
+\begini
+\item The JWST Backgrounds Tool (\jbt) is a a simple command line tool that accesses the \jwst background models to return the total background intensity and its components as a function of time (as a plot). This can be useful for estimating and visualizing the impact of the background on the schedulability of \jwst observations as it returns also the number of days per year that the target is observable at low background, for a given wavelength and a selectable threshold. 
+\item A future PSF Reference Star selection tool. Simulations have shown that the spectral mismatch between the PSF reference and the target of scientific interest can results in a loss of sensitivity in the speckle limited zone close to the occulter. We recommend to match the spectral types of all stars in a sequence as much as possible an provide guidelines to identify the most suited reference stars for a given science target\cite{jdox_psfreftool}. However, this effect loses importante as the wavelength increases and we think that it has to be a trade-off with the distance (and hence the overheads associated to slew the telescope and the possible difference in thermal configuration) between stars in an observing sequence. One should treat the latter as dominant effect.
+\endi
+%
+
+\section{Simulations, Pipeline and interfaces}
+\label{sec:sim}
+
+As expected for this magnitude of a project spanning decades and involving hundreds of astronomers and engineers, there are many efforts to simulate the data that will be produced by the \jwst observatory and each of the the modes of each instruments. At \stsci, we adopt an end to end approach (see section~\ref{sec:e2e}). All validated simulated datasets are archived on the The Barbara A. Mikulski Archive for Space Telescopes (\mast)\footnote{The landing page of \jwst simulations on \mast: {\small \tt \href{http://archive.stsci.edu/jwst/simulations/index.html}{archive.stsci.edu/jwst/simulations/}}.}.
+
+\subsection{Ramp simulator}
+\label{sec:ramp}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.9\textwidth, angle=0]{Figures/JWST_coro_sim.png}
+\caption{The coronagraphy data simulation chain prototype for \nircam. Currently some of the steps are done semi-manually and need to be automated. From an \etc coronagraphic calculation (target image, JSON file), one can prepare a seed image and YAML file which are necessary for \mirage the ramp simulator to produce the correct output, a realistic FITS image that can be directly ingested by the pipeline with the proper format, gain, header keywords, etc.}
+\label{fig:jwst-sim}
+\end{center}
+\end{figure}
+
+This is a preliminary method to use the \etc outputs for \nircam coronagraphy simulations with \mirage. In the future, we plan a similar interfacing with the \mirisim for \miri\footnote{\mirage: Multi Instrument RAmp GEnerator, formally known as the \nircam ramp simulator (not yet fully released nor fully documented). \mirisim: ramp simulator for \miri (only available internally at present).}. \stips is another \jwst data simulator with many modes though currently we have not tried to interface it with coronagraphic seed images.
+
+It is a work in progress and we would like the workflow detailed in Fig.~\ref{fig:jwst-sim}) to be as automatic and easy to performa as possible. Amongst foreseen improvements to our interface are:
+\begini
+\item Use JSON file to manually run the \pandeia engine and generate optimized outputs ({\em i.e} turn off the noise sources to avoid duplication. While the \etc takes shot noise into account, more evolved simulator add a more complete set of noise sources).
+\item Optimize the way the correct subarray location is selected without going necessarily through the full frame image step and avoid creating a seed image large than the initial target image. 
+\item Interface \apt to generate the YAML file for \mirage as it is possible for the imaging mode.
+\endi
+
+%\todo{Tools: ETC-UI, Pandeia, Pandeia-Coronagraphy, pyNRC}
+
+\subsection{Pipeline and interfaces}
+\label{sec:pipe}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.65\textwidth, angle=0]{Figures/JWST_coro_pipeline1.png}
+\caption{Left: The pipeline for Coronagraphy starts to differ from imaging at the Level 3 stage: \calcoron. Right: steps of the \calcoron level 3 stage.}
+\label{fig:jwst-pipeline}
+\end{center}
+\end{figure}
+
+The "JWST Science Calibration Pipeline" (referred to as "the \pipeline" here) is composed of a set of modules:
+\begini
+ \item Stage 1: common detector-level processing of data from all observing modes
+ \item Stage 2: processing of data for imaging (at large) and spectroscopic modes  
+ \item Stage 3: processing for specific mode: Imaging, Spectroscopic, Coronagraphic, \ami, and Time Series Observations (TSO).
+\endi
+
+Hence, the processing becomes specific to coronagraphy at the Stage 3 level as explained in Fig.~\ref{fig:jwst-pipeline}.\\
+\calcoron is to be applied to associations of calibrated \nircam coronagraphic and \miri (Lyot and 4QPM) exposures, and is used to produce PSF-subtracted, resampled, combined images of the source object.
+
+\section{End to End Cookbook}
+\label{sec:e2e}
+
+We wish the users to get acquainted with the data, pipeline recipes and products at various levels. Fig~\ref{ig:jwst-e2e} display a representation of our end to end (E2E) vision, looping around from the scientific idea of a user to the observation planning to the data flow  (simulation, pipeline, calibrations, reference files and eventually post processing), to the quicklook and analysis. Such cookbook can allow users to iteratively optimize their program and the same is true for the observatory staff with commissioning and calibration programs. When this E2E workflow will be robust enough, ideally, only the data simulation step will be replaced by the actual data.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth, angle=0]{Figures/JWST_coro_e2e_2.png}
+\caption{All steps of the E2E cookbook.  It will allow an optimization of parameters and the refinement of the PSF subtraction strategy through iterations.}
+\label{fig:jwst-e2e}
+\end{center}
+\end{figure}
+
+We plan on generating example cookbooks for several canonical science cases with coronagraphy as well as with the astrometric confirmation TA images. We have most of the building blocks at hand but still need to write interfaces and increase the robustness. For each release, the generated datasets will be archived in \mast.
+
+\section{Performance and Fidelity}
+\label{sec:perf}
+
+As explained in section~\ref{sec:etc}, the \etc UI is great to get started and explore a few things (saturation, exposure times, rough contrast estimates in the background limited regime $\geqslant$1\arcsec) but it is not quite flexible enough to allow coronagraphic experts to extract and identify key parameters that limit the performance of PSF subtraction and techniques to overcome them.
+
+In Perrin et al. 2018\cite{perrin2018_JWST_coro_perfs} the effects of imperfect target acquisition (TA) and the modeling of various sources of wavefront errors (WFE) with different amplitudes, spatial and time scales are investigated as well as the color mismatch between science target and reference PSF star. The authors also show that some of the contrast can be recovered thanks to the use of small grid dithers on the PSF reference star and a PCA "\klip"\footnote{PCA: Principal Component Analysis; \klip: Karhunen
+Lo\`eve Image Projection (as implemented in the \jwst \pipeline)} base approach for the PSF subtraction \cite{soummer2012}. If using 3 PSF reference stars (the one attached to the science target in \apt and two taken taken several hours before or after on either side) even taken at quite different orientations (hence temperatures, hence WFE) a near optimal contrast defined by the fundamental noise floor.
+
+ This is all compatible with the baseline coronagraphic observing strategy, pipeline implementation and overall, to our E2E cookbook prototype.
+ % Our data simulation step will soon benefit from these updates in \webbpsf\cite{perrin2012_WebbPSF, perrin2015_WebbPSF}.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth, angle=0]{Figures/JWST_coro_perf_tools.png}
+\caption{Top: \nircam simulation of the inclined debris disk HD10647 with \pynrc\cite{leisenring2018_pyNRC_prep}. Bottom: example of special ETC calculation with \pancake where the PSF has been subtracted from the science scene (HR8799bcde) with \klip and a mini library (artificial PSF) made of the different \sgd pointings. On the bottom right inside, all the four planets are recovered.}
+\label{fig:jwst-perf}
+\end{center}
+\end{figure}
+
+Typically, to carry out this kind of realistic performance assessment using the most up to date ground measurements and understanding of the thermal drifts and wavefront errors, one can substitute the official \etc UI with an extension called 
+\pancake\cite{vangorkom2016_pandeia-coronagraphy} (formally {\tt Pandeia-Coronagraphy}. Currently this tool allows to construct and parametrize scenes just like with the official \etc and explore a limited set of observing constrains and strategies. It is using the \pandeia engine through a set of notebooks dedicated to coronagraphy. Calling \webbpsf "on the fly" it can introduce any discrete spatial shifts and reproduce ?small grid dithers? (\sgd) scenarii. The calculation window size can be adjusted at will (at the cost of speed) as well as the spectral binning of the PSFs. Currently \pancake is being updated to comply with the latest version of \pandeia. In the near future, we aim at documenting it better as well as creating new notebooks with more diverse examples (large debris disk, AGN, companion close to the IWA, spectral mismatch) as well as a way to address several state of WFE to simulate departure from stability, optimistic and pessimistic cases.
+
+\pynrc, developed by Jarron Leisenring and contributors (2015-2018)\cite{leisenring2018_pyNRC_prep} is another, very complete Python-based toolset for planning observations with \nircam, including coronagraphy. It is very handy as exposure time calculator, in particular to pin down which readout pattern best suits a given observation thanks to its ramp simulator. Like the other simulators mentioned in this paper, it also generates PSFs calling \webbpsf to reproduce realistic \jwst images and spectra. 
+An interesting feature is that \pynrc, like the \etc, calculates PSFs at discrete intervals from the coronagraph center but unlike the \etc it interpolates in order to get the proper throughput at close IWA.  As Fig.~\ref{fig:jwst-perf}) shows (top), \pynrc can be used to explore the detectability of faint debris disks and to produce somewhat realistic images of how the disks will look with \nircam coronagraphy after post-processing. 
+
+At \stsci our goal is obviously not to duplicate work and implement in \pancake (for which we have ownership) what already exists in \pynrc. In the contrary, we aim at comparing the tools for the functionalities for which there is an overlap and more importantly we think it would be most useful to interface \pynrc with \mirage, use it as a target image generator (Fig~\ref{fig:jwst-sim}) for disks or to produce efficiently contrast curves with a finer interpolation.
+
+\section{CONCLUSIONs and roadmap}
+
+It is a "golden age" for \hci and especially for the direct imagery of young exo-planetary systems. There is a great deal of synergy and complementarity between space missions and ground-based efforts. With adaptive optics (AO) on 8 to 10-meter telescopes (and within 10 years, the first 25 to 40-meter "ELTs") coming to maturity and submillimetric arrays such as ALMA, the ground systems have the advantage of the angular resolution as well as the multiplexing, upgrading capability of their potentially huge instruments. Often they also equiped with the highest resolution spectrographs.
+
+\hst at shorter wavelengths and \jwst in the infrared have incomparable sensitivity (including in the bands which are absorbed by the Earth's atmosphere and thus inaccessible from the ground) and PSF stability as well as near unlimited sky coverage to achieve high performance even in the darkest regions of the sky and around faint objects.
+
+\hci and coronagraphy, particularly with \jwst aren't limited to exoplanets and galactic science cases. Fig.~\ref{fig:qso} shows that PSF subtraction was successfully applied by Hines {\em et al.} in 1999\cite{hines1999_qso} to \hst/NICMOS imaging data to reveal the complex morphology of the host galaxies and molecular gas of the redshift z$\sim$0.3 QSO $PG 1700+518$ at 1.6\micron. Evans {\em et al.} 2009\cite{evans2009_qso} obtained a very similar though deeper image using \hst coronagraphy. This is a "toy example" of what can be done with \jwst at longer wavelengths.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth, angle=0]{Figures/HST_QSO.png}
+\caption{The environment (host galaxies and molecular gas) of the QSO $PG 1700+518$ revealed by HST/NICMOS at 1.6\micron with PSF subtraction applied to regular imaging and coronagraphy.}
+\label{fig:qso}
+\end{center}
+\end{figure}
+
+Our mid to long-term goal is to ease and maximize the scientific use and return of \jwst's coronagraphic modes. Prior launch, we will prepare to analyze the first data : commissioning, Early Release Science (\ers) and Cycle 1 Guaranteed Time Observations (\gto). We will improve and adapt the above mentioned tools based on the experience and real performances, serving and benefitting from an already very active community of high-contrast, direct imaging users.
+
+At present we are working towards a first complete E2E coronagraphic workflow from the seed image generation to the pipeline products and performance analysis for a simple case of a bright star with a faint companion. In the future, we would like all users to easily perform somewhat realistic simulations and exerce the full pipeline. We aim to provide notebooks for various science use cases\footnote{The expanding list of detailed science use cases of \jwst on \jdox: {\small \tt \href{https://jwst-docs.stsci.edu/display/JPP/JWST+Science+Use+Cases}{$\sim$/JPP/JWST+Science+Use+Cases}}} (for \nircam, \miri or both), examples to recover astrometry, adapt to the \exoctk\cite{stevenson2018_exoctk} tool suite (e.g. provide the SNR in each filter from an uploaded exoplanet spectrum as does \pandexo\cite{batalha2017_pandexo} for transiting exoplanets).
+
+\acknowledgments % equivalent to \section*{ACKNOWLEDGMENTS}       
+ 
+JWST is a joint project of the U.S. National Aeronautics and Space Administration (NASA), the European Space Agency, and the Canadian Space Agency. The Space Telescope Science Institute (STScI) is operated by the Association of Universities for Research in Astronomy, for the National Aeronautics and Space Administration under contracts NAS5-26555 and NAS5-03127. We thank our colleagues of the JWST project team for their many supporting efforts. In particular we are grateful to all the current and past staff members at STScI that support general and coronagraphy tools, ETC, APT and pipeline development teams, etc.
+%\todo{Write acknowledgements}
+
+% References
+\bibliography{biblio_spie2018} % bibliography data in report.bib
+\bibliographystyle{spiebib} % makes bibtex use spiebib.bst
+
+\end{document} 
+
